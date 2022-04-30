@@ -1,0 +1,877 @@
+/* Global */
+* { -webkit-font-smoothing: antialiased; }
+
+body {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 100;
+	font-size: 1em;
+	color: #ffffff;
+	background-color:#ffffff;
+}
+	img {
+		max-width: 100%;
+	}
+	
+	img.icon {
+		width:60px; 
+		height:60px;
+	}
+	
+	a:link {
+		color: #299bff;
+		text-decoration: none;
+	}
+	a:hover {
+		color: #838383;
+		text-decoration: none;
+	}
+	a:visited {
+		color: #86c7ff;
+		text-decoration: none;
+	}
+
+	h1 {
+		font-family: 'Arial', sans-serif;
+		text-align: left;
+		text-transform: uppercase;
+		font-size: 3.2em;
+		line-height: 0;
+		font-weight: 800;
+		margin: 0 0 1em 0;
+		padding: 0 0 0.8em 0;
+		letter-spacing: 0em;
+	}
+	
+	h2 {
+		text-align: left;
+		font-style: normal;
+		font-size: 2.5em;
+		letter-spacing: -0.055em;
+		margin: 0.3em 0 0.8em 0;
+		line-height: 0;
+		font-weight: 200;
+	}
+	
+	h3 {
+		text-align: left;
+		font-style:italic ;
+		margin-bottom: 1em;
+		font-weight: 100;
+		font-size: 1.3em;
+		letter-spacing: 0.18em;
+	}
+
+	h4
+	{
+		text-align: center;
+		font-style: normal;
+		letter-spacing: -0.055em;
+		font-size: 1.5em;
+		color: #299bff;
+		padding-bottom: 0.1em;
+		/*text-transform: uppercase;*/
+		margin: 0em 0em 0.6em 0em;
+		font-weight: 200;
+		/*text-shadow: 0px 1px 1px rgba(0,0,0,0.5);*/
+	}
+	
+/* Forms */
+
+	form
+	{
+	}
+	
+		form input,
+		form select,
+		form textarea
+		{
+			-webkit-appearance: none;
+			
+			-webkit-transition: background .9s;
+			   -moz-transition: background .9s;
+			    -ms-transition: background .9s;
+			     -o-transition: background .9s;
+			        transition: background .9s;
+			        
+			-webkit-box-shadow:0px 5px 6px -2px rgba(0,0,0,.4);
+			   -moz-box-shadow:0px 5px 6px -2px rgba(0,0,0,.4);
+			        box-shadow:0px 5px 6px -2px rgba(0,0,0,.4);
+		}
+
+		form input[type=text],
+		form input[type=password],
+		form select,
+		form textarea
+		{
+			width: 90%;
+			margin: 0.6em 0em;
+			border: 0;
+			padding: 0.7em;
+			font-size: 1em;
+			background: #282828;
+			background: rgba(55,57,58,1);
+			color: #bbb;
+		}
+
+		form input[type=text]:focus,
+		form input[type=password]:focus,
+		form select:focus,
+		form textarea:focus
+		{
+			background: rgba(27,78,123,1);
+			color: #f5f5f5
+		}
+		
+		form textarea
+		{
+			height: 15em;
+		}
+		
+		form .formerize-placeholder
+		{
+			color: #888888 !important;
+		}
+
+		form ::-webkit-input-placeholder
+		{
+			color: #888888 !important;
+		}
+
+		form :-moz-placeholder
+		{
+			color: #888888 !important;
+		}
+
+		form ::-moz-placeholder
+		{
+			color: #888888 !important;
+		}
+
+		form :-ms-input-placeholder
+		{
+			color: #888888 !important;
+		}
+
+		form ::-moz-focus-inner
+		{
+			border: 0;
+		}
+
+/* Navigation */
+
+.sticky-container {
+	height: 0 !important;
+	position: relative;
+}
+
+
+.menu {
+	position: absolute;
+	bottom: 0;
+	width:100%; 
+	height: auto;
+	background-color: #ecf0f1;
+	z-index:100;
+	   
+	-webkit-transition: all .9s;
+	   -moz-transition: all .9s;
+	    -ms-transition: all .9s;
+	     -o-transition: all .9s;
+	        transition: all .9s;
+}
+
+.menu-header {
+	position:fixed;
+	top:0;
+	width:100%; 
+	height:auto; 
+	background-color: #fffff;
+	z-index:100;
+		
+	-webkit-transition: all .9s;
+	   -moz-transition: all .9s;
+	    -ms-transition: all .9s;
+	     -o-transition: all .9s;
+	        transition: all .9s;
+	        
+	
+}
+
+.menu-footer {
+	position:fixed;
+	top:0;
+	width:100%; 
+	height:auto; 
+	background-color:rgba(36,36,36,0.88) !important;
+	z-index:100;
+	
+	-webkit-transition: all .9s;
+	   -moz-transition: all .9s;
+	    -ms-transition: all .9s;
+	     -o-transition: all .9s;
+	        transition: all .9s;
+	        
+	
+}
+
+.m-shadow {
+	background-color:#ffffff;
+	-webkit-transition: all .5s;
+	   -moz-transition: all .5s;
+	    -ms-transition: all .5s;
+	     -o-transition: all .5s;
+	        transition: all .5s;
+		
+	-webkit-box-shadow: 0 7px 6px -6px rgba(0,0,0,0.4);
+	   -moz-box-shadow: 0 7px 6px -6px rgba(0,0,0,0.4);
+	        box-shadow: 0 7px 6px -6px rgba(0,0,0,0.4);
+	        
+}
+
+#logo {
+	text-align: center;
+	margin: 0.5em 0;
+}
+
+#nav {
+	text-align: right;
+	margin: 1.8em 0 0 0;
+}
+
+	.navigation {
+		font-family: 'Arial', sans-serif;
+		float: right;
+		list-style: none;
+		margin: 0;
+	}
+	
+		.navigation li {
+			float: left;
+			padding:0 0 0 50px;
+		}
+		
+		.navigation a {
+			color: #299bff;
+			text-decoration: none;
+		}
+		
+		.navigation .active {
+			color: #838383;
+			font-weight:bold;
+		}
+
+
+/* Content */ 
+
+	#content .button {
+		color: #ffffff;
+	}
+
+.content-support {
+	background-color: rgba(56,63,65,0.46);
+	padding: 2em;
+	overflow: hidden;
+}
+	
+
+/* General Mbslides */ 
+
+.mbslide {
+	/*box-shadow: inset 0px 1px 0px 0px rgba(0,0,0,0.05), inset 0px 2px 3px 0px rgba(0,0,0,0.3);*/
+	width:100%;
+	height:100%;
+	position: relative;
+	padding:130px 0 70px 0;
+	overflow: hidden;
+}
+
+/* General breath */
+
+.breath {
+	padding:15% 0;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	/*-webkit-box-shadow:inset 0px -3px 3px -3px rgba(0,0,0,0.5),
+	                   inset 0px  3px 3px -3px rgba(0,0,0,0.5);
+	   -moz-box-shadow:inset 0px -3px 3px -3px rgba(0,0,0,0.5),
+	                   inset 0px  3px 3px -3px rgba(0,0,0,0.5);
+	        box-shadow:inset 0px -3px 1px -3px rgba(0,0,0,0.5),
+	                   inset 0px  3px 1px -3px rgba(0,0,0,0.5);*/
+	background-color:#5d5d5d;
+	color:#ffffff;
+}
+	.breath #content {
+		text-align: center;
+	}
+	
+	.breath .buttontop { 
+		color: rgba(0,0,0,0.7);
+	}
+
+
+/*********************************************************************************/
+/* Mbslide 1 - ME                                                                */
+/*********************************************************************************/
+
+	#me {
+		background-color:#ffffff;
+		padding: 3em 0 8em 0;
+		background:url('../images/scrollbg-blur.png');
+		-webkit-transform: translateZ(0);
+	}
+	
+		#me h1 {
+			font-size: 3.9em;
+			text-align: left;
+			text-transform: none;
+			letter-spacing: -3px;
+			line-height: normal;
+			margin: 0 0 0.4em 0;
+			padding: 0 0 0.2em 0;
+			/*border-bottom: 1px solid #dfdfdf; */
+			font-weight: 300;
+		}
+		
+		#me h2 {
+			color: #a3c9eb;		
+		}
+		
+		#me h3 {
+			
+		}
+		
+				
+		
+		
+/*********************************************************************************/
+/* Breath 1                                                                      */
+/*********************************************************************************/
+	
+	.breath1 {
+		background:url('../images/scrollbg-blur.png');
+	}
+
+
+/*********************************************************************************/
+/* Mbslide 2 - WORK                                                              */
+/*********************************************************************************/
+
+	
+	#work {
+		box-shadow:none;
+		background-color:#272727;
+		-webkit-transform: translateZ(0);
+		/*background-image:url('../images/textures/debut_dark.png');*/
+	}
+	
+		#work h1 {
+			color: #f8f8f8;
+		}
+	    
+	    #work h2 {
+	    	color: #c9c9c9;
+		}
+		
+		#work h3 {
+			color: #a6a6a6;
+		}
+		
+		#work p {
+			text-align: left;
+			font-size: 1em;
+		}
+		
+		#work #title-work {
+			margin-bottom: 2em;
+		}
+		
+		#work #title-about-work {
+			margin-top: 3em;
+		}
+		
+	    #work #content {
+	    	position: relative;
+	    	text-align: center;
+		}
+		
+		#work #decorative {
+			position: relative;
+		}
+		
+		#work .button {
+			margin: 1.7em 0 0 0;
+		}
+		
+		/* BOX */
+		#work .box {
+			cursor: pointer;
+			position: relative;
+			color: #f8f8f8;
+			height: 200px;/* We want them to be the same height which is not possible dynamically */
+			padding: 1.5em 1.5em;
+			margin: 0;
+			background: #373737;
+			text-align: center;
+			
+			-webkit-transition: background .3s ease-in, color .3s ease-in;
+		       -moz-transition: background .3s ease-in, color .3s ease-in;
+		         -o-transition: background .3s ease-in, color .3s ease-in;
+		            transition: background .3s ease-in, color .3s ease-in;
+		            
+		    -webkit-transform: translateZ(0);
+		}
+		
+			#work .box .image {
+				float: left;
+				margin: 1em;
+			}
+			
+			#work .box p {
+				text-align: center;
+				color: #f8f8f8;
+				font-size: 1em;
+			}
+			#work .box .image-centered {
+				display: block;
+				margin: 0 0 1em 0;
+			}
+		
+			#work .box:hover {
+				color: #e1e1e1;
+				background: rgba(27,78,123,1);
+			}
+			
+		/* SLIDE */
+		#work #boxslider {
+			margin: 1em 0 0 0;
+			background: #323539;
+		}
+		
+		#work .slide {
+			padding: 1.5em 1.5em 1em 1em;
+			font-size: 1em;
+		}
+		
+		#work .slide .image {
+			float: left;
+			padding: 1em 1.2em 1.5em 0em;
+			margin: 1em 1.5em 1.5em 0em;
+			border-right: 1px solid #606060;
+		}
+		
+		#work .slide h4{
+			text-align: left;
+		}
+
+
+/*********************************************************************************/
+/* Breath 2                                                                      */
+/*********************************************************************************/
+	
+	.breath2 {
+		background:url('../images/scrollbg-blur.png');
+	}
+	
+
+		
+/*********************************************************************************/
+/* Mbslide 3 - RESUME                                                            */
+/*********************************************************************************/
+
+	#resume {
+		background-color:#ffffff;
+		-webkit-transform: translateZ(0);
+		/*background-image:url('../images/textures/gray_jean.png');*/
+	}
+
+		#resume h1 {
+			color: #838383;
+		}
+	    
+	    #resume h2 {
+	    	color: #9a9a9a;
+		}
+		
+		#resume h3 {
+			color: rgba(89,87,87,1);
+		}
+		
+		#resume h4 {
+			text-align: left;
+						
+			-webkit-transition: color .3s ease-in;
+		       -moz-transition: color .3s ease-in;
+		         -o-transition: color .3s ease-in;
+		            transition: color .3s ease-in;
+		            
+		    -webkit-transform: translateZ(0);
+		}
+	
+		#resume p {
+			text-align: left;
+			font-size: 1em;
+			padding-top: 0.3em;
+		}
+		
+		#resume #content {
+	    	position: relative;
+	    	text-align: center;
+		}
+
+
+/*********************************************************************************/
+/* Breath 3                                                                      */
+/*********************************************************************************/
+	
+	.breath3 {
+		background:url('../images/scrollbg-blur.png');
+	}
+
+
+/*********************************************************************************/
+/* Mbslide 4 - CONTACT                                                           */
+/*********************************************************************************/
+
+	#contact{
+		box-shadow:none;
+		background-color:#282828;
+		-webkit-transform: translateZ(0);
+	}
+		#contact h1 {
+			color: rgba(247,247,247,1);
+		}
+	    
+	    #contact h2 {
+	    	color: #9a9a9a;
+		}
+		
+		#contact h3 {
+			color: #cfcfcf;
+		}
+		
+		#contact p {
+			color: #dddddd;
+		}
+
+	#contact form#contactform {
+		padding: 2em 0 0 0;
+	}
+	
+	#contact .contactforminput {
+		position: relative;
+	}
+
+	#contact label.contactformerror {
+		-webkit-transition: opacity 2s ease-in-out;
+		   -moz-transition: opacity 2s ease-in-out;
+		    -ms-transition: opacity 2s ease-in-out;
+		     -o-transition: opacity 2s ease-in-out;
+		        transition: opacity 2s ease-in-out;
+		        
+		position: absolute;
+		z-index: 30;
+		right: 10%;
+		background: #ffffff;
+		color: #454545;
+		padding: 0.8em;
+		top: -40px;
+	}
+	
+	#contact label.contactformerror:after {
+		top: 100%;
+		border: solid transparent;
+		content: " ";
+		height: 0;
+		width: 0;
+		position: absolute;
+		pointer-events: none;
+	}
+	
+	#contact label.contactformerror:after {
+		border-color: rgba(255, 255, 255, 0);
+		border-top-color: #ffffff;
+		border-width: 10px;
+		left: 50%;
+		margin-left: -10px;
+	}
+	
+		#contact .border {
+			text-align: left;
+		    border: 0px solid #fff;
+		    width: 80%;
+		    margin: auto;
+		    padding: 3em 0 0 0;
+		    /*border-radius: 50%;*/
+		    display:block;
+		}
+		
+		
+		#contact .shadow {
+			display: block;
+		    position:relative;
+		    margin-bottom: 1px;
+		    
+		}
+		 
+			#contact .shadow img {
+				display: block;
+				border-radius: 50%;
+			}
+			 
+			
+			#contact .shadow:before {
+			    display:block;
+			    content:'';
+			    position:absolute;
+			    border-radius: 50%;
+			    width:100%;
+			    height:100%;
+			    /*-webkit-box-shadow: 0px 1px 0px 0px rgba(150,150,150,0.5), inset 0px 0px 3px 1px rgba(0,0,0,0.4);
+			       -moz-box-shadow: 0px 1px 0px 0px rgba(150,150,150,0.5), inset 0px 0px 3px 1px rgba(0,0,0,0.4);
+			            box-shadow: 0px 1px 0px 0px rgba(150,150,150,0.5), inset 0px 0px 3px 1px rgba(0,0,0,0.4);*/
+			}
+
+	
+/*********************************************************************************/
+/* Mbslide 5 - FOOTER                                                            */
+/*********************************************************************************/
+
+	#footer {
+		background-position: center;
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+		/*-webkit-box-shadow: inset 0px 1px 0px 0px rgba(0,0,0,0.05), inset 0px 2px 3px 0px rgba(0,0,0,0.3);
+		   -moz-box-shadow: inset 0px 1px 0px 0px rgba(0,0,0,0.05), inset 0px 2px 3px 0px rgba(0,0,0,0.3);
+			    box-shadow: inset 0px 1px 0px 0px rgba(0,0,0,0.05), inset 0px 2px 3px 0px rgba(0,0,0,0.3);*/
+		background-color:#5d5d5d;
+		color:#ffffff;
+		background:url('../images/scrollbg-blur.png');
+		-webkit-transform: translateZ(0);
+	}
+	
+		#footer h1 {
+			color: #838383;
+		}
+	    
+	    #footer h2 {
+	    	color: #9a9a9a;
+		}
+		
+		#footer h3 {
+			color: rgba(89,87,87,1);
+			text-align: left;
+		}
+		
+		#footer #content {
+	    	position: relative;
+	    	text-align: center;
+		}
+	
+	
+	
+/* TEST */
+	
+#test{
+	background-color:#bde2df;
+	color:#ffffff;
+	text-align:center;
+	font-size: 2em;
+	font-weight: 400;
+}
+
+.undecorative {
+	display: none;
+}
+
+
+
+
+
+/* Tablet */
+@media screen and (max-width: 1024px) {
+
+	#logo {
+		width: 100%;
+		text-align: center;
+	}
+	
+	#logo img {
+		width: 30%;
+	}
+	
+	#nav {
+		width:100%;
+		text-align:center;
+		margin:10px 0;
+		font-size: 0.85em;
+		margin-bottom: 2em;
+	}
+	
+	.navigation {
+		width: 100%;
+		float: center;
+		list-style: none;
+		margin: 0;
+		padding:0;
+	}
+	
+	.navigation li {
+		float: left;
+		width:25%;
+		padding:0;
+	}
+	
+	.mbslide {
+		background-attachment: scroll;
+		width:100%;
+		position: relative;
+		padding:150px 0 70px 0;
+	}
+	
+	#work .box_3 {
+		width: 47%;
+		text-align: center;
+		margin-right: 3%;
+		margin-bottom: 3%;
+	}
+	
+	.box {
+		margin: 0;
+		text-align: center;
+	}
+	
+	.mbslide2 #boxslider {
+		margin: 1em 0 0 0;
+	}
+	
+	.breath {
+		background-attachment: fixed;
+		padding:20% 0;
+		width:100%;
+		background-position: top top;
+		background-size: 100%;
+	}
+	
+	.decorative {
+		display:none;
+	}
+	
+	.undecorative {
+		display: block;
+	}
+	
+	#content {
+		text-align:center;
+		width:100%;
+	}
+	
+	#contact .border {
+		text-align:center;
+		margin: auto;
+		padding: auto;
+		width:30%;
+	}
+	
+	/*.mbslide1 h1 {
+		line-height: 1em;
+		text-align: center;
+	}*/
+
+}
+
+
+
+
+/* iPhone and prortrait iPad*/
+@media screen and (max-width: 768px) {
+
+	#logo {
+		width: 100%;
+		text-align: center;
+	}
+	
+	#nav {
+		width:100%;
+		text-align:center;
+		margin:10px 0;
+		font-size: 0.75em;
+		margin-bottom: 2em;
+	}
+	
+	.navigation {
+		width: 100%;
+		float: left;
+		list-style: none;
+		margin: 0;
+		padding:0;
+	}
+	
+	.navigation li {
+		float: left;
+		width:25%;
+	}
+	
+	.mbslide {
+		background-attachment:scroll;
+		width:100%;
+		position: relative;
+		padding:150px 0;
+	}
+	
+	.breath {
+		background-attachment: fixed;
+		padding:20% 0;
+		width:100%;
+		background-position: top top;
+		background-size: 100%;
+	}
+	
+	.undecorative {
+		display: none;
+	}
+	
+	.mbslide2 .box_3
+	{
+		width: 100%;
+	}
+	
+	.mbslide2 .box
+	{
+		height: 100%;
+		margin-bottom: 6%;
+	}
+	
+	
+	.mbslide1 h1 {
+		line-height: 1em;
+	}
+	.mbslide1 h2 {
+		line-height: 1em;
+	}
+	.mbslide2 h1 {
+		line-height: 1em;
+	}
+	.mbslide2 h2 {
+		line-height: 1em;
+	}
+	.mbslide3 h1 {
+		line-height: 1em;
+	}
+	.mbslide3 h2 {
+		line-height: 1em;
+	}
+	.mbslide4 h1 {
+		line-height: 1em;
+	}
+	.mbslide4 h2 {
+		line-height: 1em;
+	}
+
+
+}
+
+
+
+
+

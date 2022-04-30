@@ -1,0 +1,249 @@
+
+/*********************************************************************************/
+/* Calendar                                                                      */
+/*********************************************************************************/
+	.calendar {
+	    -moz-border-radius: 2px;
+	    -webkit-border-radius: 2px;
+	    border-radius: 2px;
+	    background-color: #efefef;
+		/*-webkit-box-shadow: 0 6px 6px -6px rgba(0,0,0,0.4);
+		   -moz-box-shadow: 0 6px 6px -6px rgba(0,0,0,0.4);
+			    box-shadow: 0 6px 6px -6px rgba(0,0,0,0.4);*/
+	}
+	
+	/*==================================*/
+	/* Month                            */
+	/*==================================*/
+	.c-header {
+	    background: #e74c3c;
+	    -webkit-border-top-right-radius: 2px;
+	    -moz-border-radius-topright: 2px;
+	    border-top-right-radius: 2px;
+	    -webkit-border-top-left-radius: 2px;
+	    -moz-border-radius-topleft: 2px;
+	    border-top-left-radius: 2px;
+	    text-align: center;
+	    font-size: 0.8em;
+	    font-weight: 500;
+	    color: #fff;
+	    padding: 4px 0 4px 0;
+	    /*-webkit-box-shadow: 0 1px 1px 0px rgba(0,0,0,0.3);
+		   -moz-box-shadow: 0 1px 1px 0px rgba(0,0,0,0.3);
+			    box-shadow: 0 1px 1px 0px rgba(0,0,0,0.3);*/
+	}
+	
+	/*==================================*/
+	/* Year                             */
+	/*==================================*/
+	.num-day {
+	    font-size: 1.1em;
+	    color: #333;
+	    text-align: center;
+	    padding: 0.4em 0 0.6em 0;
+	}
+	
+	
+	/*==================================*/
+	/* Decoration                       */
+	/*==================================*/
+	.c-header:before {
+	    background: #333;
+	    height: 1px;
+	    width: 1px;
+	    content: "";
+	    display: block;
+	    position: absolute;
+	    top: 15%;
+	    left: 15%;
+	    -moz-border-radius: 6px;
+	    -webkit-border-radius: 6px;
+	    border-radius: 6px;
+	    padding: 1px
+	}
+	
+	.c-header:after {
+	    background: #333;
+	    height: 1px;
+	    width: 1px;
+	    content: "";
+	    display: block;
+	    position: absolute;
+	    top: 15%;
+	    right: 15%;
+	    -moz-border-radius: 6px;
+	    -webkit-border-radius: 6px;
+	    border-radius: 6px;
+	    padding: 1px
+	}
+
+
+
+	/*********************************************************************************/
+	/* Timeline                                                                      */
+	/*********************************************************************************/
+	
+	.stories {
+		margin: 3.6em 1.2em 0em 0em;
+		display: block;
+	}
+	
+	.story {
+	    padding: 0 0 1em 0;
+	    /*border-bottom: 1px solid #eeeeee;*/ 
+	    margin: 1em 0 1em;
+	    *zoom: 1;
+	}
+		
+		.story p {
+		    margin: 0 0 1em;
+		}
+		
+		.story-img {
+			cursor: pointer;
+		    float: left;
+		    margin-right: 60px;
+		    border-radius: 5px;
+		    width: 60px;
+		    position: relative;
+		}
+		
+		.story-img img {
+		    display: block;
+		}
+		
+		.story-body {
+		    margin: 0 0 0 120px;
+		}
+		
+		/* Text box */
+		.story .text {
+			padding: 1.3em 1.5em 1.7em 1.5em;
+		    color: #555555;
+		    background: #efefef;
+		    cursor: pointer;
+		    font-weight: 300;
+		    
+		    -webkit-transform: translateZ(0);
+		    
+		    /*-webkit-box-shadow: 0 6px 6px -6px rgba(0,0,0,0.4);
+			   -moz-box-shadow: 0 6px 6px -6px rgba(0,0,0,0.4);
+			        box-shadow: 0 6px 6px -6px rgba(0,0,0,0.4);*/
+			        
+			-webkit-transition: background .3s ease-in;
+		       -moz-transition: background .3s ease-in;
+		         -o-transition: background .3s ease-in;
+		            transition: background .3s ease-in;
+		}
+		
+	
+		
+		.story .text:hover {
+		    color: #262626;
+		    background: #8dc6f8;
+		    /*-webkit-box-shadow: 0 6px 6px -6px rgba(0,0,0,0.6);
+			   -moz-box-shadow: 0 6px 6px -6px rgba(0,0,0,0.6);
+			        box-shadow: 0 6px 6px -6px rgba(0,0,0,0.6);*/
+		    
+		}
+		
+		.story .text:hover:before {
+		    border-right:7px solid #8dc6f8;
+		    
+		}
+		
+		.story .text:hover h4 {
+		    color: #0067a7;
+		    
+		    -webkit-transition: color .3s ease-in;
+		       -moz-transition: color .3s ease-in;
+		         -o-transition: color .3s ease-in;
+		            transition: color .3s ease-in;
+		            
+		    -webkit-transform: translateZ(0);
+		    
+		}
+		
+		.story .text p:last-child {
+		    margin: 0;
+		}
+	
+		/*==================================*/
+		/* Decoration                       */
+		/*==================================*/
+	
+		.stories,
+		.story {
+		    position: relative;
+		}
+		
+		/* Line */
+		.stories:before,
+		.story:before,
+		.story .text:before {
+		    content: "";
+		    position: absolute;
+		    top: 0;
+		    left: 89.5px;
+		}
+		
+		/* Line top/bottom correction */
+		.stories:before {
+		    width: 3px;
+		    top: 0%;
+		    bottom: 2%;
+		    background: rgba(0,0,0,0.1);
+		}
+		
+		/* Radio button */
+		.story:before {
+		    width: 9px;
+		    height: 9px;
+		    border: 3px solid #fff;
+		    border-radius: 100px;
+		    margin: 16px 0 0 -6px;
+		    /*-webkit-box-shadow:0 1px 1px rgba(0,0,0,0.2), inset 0 1px 1px rgba(0,0,0,0.1);
+			   -moz-box-shadow:0 1px 1px rgba(0,0,0,0.2), inset 0 1px 1px rgba(0,0,0,0.1);
+			        box-shadow:0 1px 1px rgba(0,0,0,0.2), inset 0 1px 1px rgba(0,0,0,0.1);*/
+		    background: #ccc;
+		}
+		
+		/* Radio button hover */
+		.story:hover:before {
+		    background: #6196c7;
+		}
+		
+        
+        /* Pointing arrow */
+		.story .text:before {
+		    top: 16.5px;
+		    left: -7px;  /* ???? old value: 113.5 */
+		    width: 0; 
+			height: 0; 
+			border-top: 7px solid transparent;
+			border-bottom: 7px solid transparent; 
+			border-right:7px solid #efefef;
+			
+			-webkit-transition: border-color .3s ease-in;
+		       -moz-transition: border-color .3s ease-in;
+		         -o-transition: border-color .3s ease-in;
+		            transition: border-color .3s ease-in;
+		}​
+		
+		
+/* Tablet */
+@media screen and (max-width: 1024px) {
+	.stories {
+		margin: 6em 0em 0em 0em;
+	}
+}
+
+
+
+
+/* Mobile */
+@media screen and (max-width: 768px) {
+	.stories {
+		margin: 6em 0em 0em 0em;
+	}
+}

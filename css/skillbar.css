@@ -1,0 +1,85 @@
+.skimiler		{ float:left; margin:-15px auto 0px 0px; width:100%; }
+.skiller 		{ margin:3.80em 20px 40px 0px; font-size:0.9em; line-height:1.7em; position:relative; }
+.col 			{ width:100%;}
+
+#skill 			{ list-style:none outside none; margin-left:0; padding-left:0; }
+#skill li 		{ background:#efefef; height:25px; margin-bottom:30px; margin-left:0px; width:100%;text-align: left;
+			        /*-webkit-box-shadow: 0 7px 6px -6px rgba(0,0,0,0.4);
+					   -moz-box-shadow: 0 7px 6px -6px rgba(0,0,0,0.4);
+					        box-shadow: 0 7px 6px -6px rgba(0,0,0,0.4);*/ }
+#skill li em 	{ color:#6f6f6f; position:relative; top:-25px; }
+#skill li small { margin-left: 10px; }
+#skill span 	{ color:#fff; padding-bottom:3px; text-align:center; }
+.expand 		{ background:#299bff; height:22px; position:absolute; left:0; -webkit-transform: translateZ(0); }
+
+
+
+.c-skill       	{ width:90%;  	-moz-animation:c-skill 2s ease-out, animate-stripes 3s linear infinite; 
+								-webkit-animation:c-skill 2s ease-out, animate-stripes 3s linear infinite;         }
+.objc-skill     { width:70%;  	-moz-animation:objc-skill 2s ease-out, animate-stripes 3s linear infinite;      
+								-webkit-animation:objc-skill 2s ease-out, animate-stripes 3s linear infinite;      }
+.cplus-skill 	{ width:40%;  	-moz-animation:cplus-skill 2s ease-out, animate-stripes 3s linear infinite;     
+								-webkit-animation:cplus-skill 2s ease-out, animate-stripes 3s linear infinite;     }
+.csharp-skill 	{ width:50%;  	-moz-animation:csharp-skill 2s ease-out, animate-stripes 3s linear infinite;    
+								-webkit-animation:csharp-skill 2s ease-out, animate-stripes 3s linear infinite;    }
+.java-skill 	{ width:80%;  	-moz-animation:java-skill 2s ease-out, animate-stripes 3s linear infinite;      
+								-webkit-animation:java-skill 2s ease-out, animate-stripes 3s linear infinite;      }
+.jquery-skill   { width:60%;  	-moz-animation:jquery-skill 2s ease-out, animate-stripes 3s linear infinite;    
+								-webkit-animation:jquery-skill 2s ease-out, animate-stripes 3s linear infinite;    }
+.photoshop-skill{ width:40%;  	-moz-animation:photoshop-skill 2s ease-out, animate-stripes 3s linear infinite; 
+								-webkit-animation:photoshop-skill 2s ease-out, animate-stripes 3s linear infinite; }
+
+.begin			{ width:0% !important; -webkit-animation: none !important; -moz-animation: none !important; }
+ 
+@-moz-keyframes c-skill         { 0%  { width:0px;} 100%{ width:90%;}  }
+@-moz-keyframes objc-skill      { 0%  { width:0px;} 100%{ width:70%;}  }
+@-moz-keyframes cplus-skill     { 0%  { width:0px;} 100%{ width:40%;}  }
+@-moz-keyframes csharp-skill    { 0%  { width:0px;} 100%{ width:50%;}  }
+@-moz-keyframes java-skill      { 0%  { width:0px;} 100%{ width:80%;}  }
+@-moz-keyframes jquery-skill    { 0%  { width:0px;} 100%{ width:60%;}  }
+@-moz-keyframes photoshop-skill { 0%  { width:0px;} 100%{ width:40%;}  }
+
+@-webkit-keyframes c-skill         { 0%  { width:0px;} 100%{ width:90%;}  }
+@-webkit-keyframes objc-skill      { 0%  { width:0px;} 100%{ width:70%;}  }
+@-webkit-keyframes cplus-skill     { 0%  { width:0px;} 100%{ width:40%;}  }
+@-webkit-keyframes csharp-skill    { 0%  { width:0px;} 100%{ width:50%;}  }
+@-webkit-keyframes java-skill      { 0%  { width:0px;} 100%{ width:80%;}  }
+@-webkit-keyframes jquery-skill    { 0%  { width:0px;} 100%{ width:60%;}  }
+@-webkit-keyframes photoshop-skill { 0%  { width:0px;} 100%{ width:40%;}  }
+
+
+
+.stripes {
+	-webkit-background-size: 30px 30px;
+	-moz-background-size: 30px 30px;
+	background-size: 30px 30px;
+			
+	background-image: -webkit-gradient(linear, left top, right bottom,
+						color-stop(.25, rgba(255, 255, 255, .15)), color-stop(.25, transparent),
+						color-stop(.5, transparent), color-stop(.5, rgba(255, 255, 255, .15)),
+						color-stop(.75, rgba(255, 255, 255, .15)), color-stop(.75, transparent),
+						to(transparent));
+	background-image: -webkit-linear-gradient(135deg, rgba(255, 255, 255, .15) 25%, transparent 25%,
+						transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%,
+						transparent 75%, transparent);
+	background-image: -moz-linear-gradient(135deg, rgba(255, 255, 255, .15) 25%, transparent 25%,
+						transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%,
+						transparent 75%, transparent);
+	background-image: -ms-linear-gradient(135deg, rgba(255, 255, 255, .15) 25%, transparent 25%,
+						transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%,
+						transparent 75%, transparent);
+	background-image: -o-linear-gradient(135deg, rgba(255, 255, 255, .15) 25%, transparent 25%,
+						transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%,
+						transparent 75%, transparent);
+	background-image: linear-gradient(135deg, rgba(255, 255, 255, .15) 25%, transparent 25%,
+						transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%,
+						transparent 75%, transparent);                		
+}
+
+@-webkit-keyframes animate-stripes { 
+	0% {background-position: 0 0;} 100% {background-position: 60px 0;}
+}
+
+@-moz-keyframes animate-stripes {
+	0% {background-position: 0 0;} 100% {background-position: 60px 0;}
+}
