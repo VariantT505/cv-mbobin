@@ -29,8 +29,8 @@ if (isset($_POST['sendmail']))
  
     /* Si le formulaire n'est pas posté de notre site on renvoie 
     * vers la page d'accueil */
-    if($_SERVER['HTTP_REFERER'] != 'http://www.maximebobin.com/'
-    && $_SERVER['HTTP_REFERER'] != 'http://maximebobin.com/')
+    if($_SERVER['HTTP_REFERER'] != 'http://www.nomdedomainechoisi.com/'
+    && $_SERVER['HTTP_REFERER'] != 'http://nomdedomainechoisi.com/')
     {
 		$reponse['success'] = false;
     }
@@ -45,11 +45,11 @@ if (isset($_POST['sendmail']))
     elseif (!isset($_COOKIE['sent']))
     {
         /* Destinataire (votre adresse e-mail) */
-        //$to = 'contact@maximebobin.com';
-        $to = 'bobin.pro@gmail.com';
+        //$to = 'contact@nomdedomainechoisi.com';
+        $to = 'monadresse@gmail.com';
  
         /* Construction du message */
-        $msg  = 'Ce mail a été envoyé depuis maximebobin.com par '.$name.' '.$sender.".\r\n\r\n";
+        $msg  = 'Ce mail a été envoyé depuis nomdedomainechois.com par '.$name.' '.$sender.".\r\n\r\n";
         $msg .= $message."\r\n";
  
         /* En-têtes de l'e-mail */
